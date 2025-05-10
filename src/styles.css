@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    background: #1e1e1e;
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJlXcoHMckJ9XhaEg-l3mfCg7efFn50a3kLMHgdVq3OwWdbZ0V5fzK1cbGPCqWK4K3SyL86JqabI2tuB-m-QJ9ipxeM5LD56Vso6bj9sStEV9T_cAcSfirvCQMAJdPtqyjCICFcnQj9nqP/s1600/Free-Hd-Nature-Mountain-River-Wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  #desktop {
+    position: absolute;
+    top: 0;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    user-select: none;
+  }
+  
+.app-icon {
+    display: inline-block;
+    background: transparent;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.app-icon i {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.app-icon span {
+    display: block;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+.app-icon:hover {
+    border-color: rgb(0, 100, 180);
+    background: rgba(0, 110, 180, 0.400);
+}
+
+  .app-icon.selected {
+    background: #005f99;
+    border-color: #007acc;
+}
+
+  .window {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: #2e2e2e;
+    border: 2px solid #555;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+  }
+  
+  .window-header {
+    background: #444;
+    padding: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .window-controls button {
+    margin-left: 5px;
+    background: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3rem;
+  }
+
+.app-content {
+    flex-grow: 1;
+    padding: 10px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #666 #2e2e2e;
+}
+
+.app-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.app-content::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+}
+
+
+  
+  #taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+  
+  .taskbar-button {
+    background: #333;
+    padding: 1.1rem 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #selection-rectangle {
+    position: absolute;
+    background: rgba(0, 120, 255, 0.3);
+    border: 1px solid #0078ff;
+    display: none;
+    pointer-events: none;
+}
+
+      @keyframes typing {
+      0% { content: '.'; }
+      33% { content: '..'; }
+      66% { content: '...'; }
+      }
+      .dots::after {
+      content: '';
+      display: inline-block;
+      animation: typing 1.5s steps(1) infinite;
+      }
+
+      .resize-handle {
+    background: transparent;
+    z-index: 10;
+}
+
+.resize-handle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
