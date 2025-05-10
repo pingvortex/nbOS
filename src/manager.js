@@ -1,6 +1,6 @@
-import { dragElement } from './functions/dragElement.js';
-import { resizeElement } from './functions/resizeElement.js';
-import { showErrorWindow } from './functions/showErrorWindow.js';
+import { dragElement } from 'https://raw.githubusercontent.com/pingvortex/nbOS/main/src/functions/dragElement.js';
+import { resizeElement } from 'https://raw.githubusercontent.com/pingvortex/nbOS/main/src/functions/resizeElement.js';
+import { showErrorWindow } from 'https://raw.githubusercontent.com/pingvortex/nbOS/main/src/functions/showErrorWindow.js';
 
 let zIndex = 10;
 
