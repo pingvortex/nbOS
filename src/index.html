@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nbOS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="desktop">
+    <div id="splash" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; z-index: 9999; font-size: 2rem;">
+    <div>Loading<span class="dots"></span></div>
+    </div>
+    <div id="selection-rectangle"></div>
+    <div class="app-icon" onclick="manager.launchApp('AppStore')"><i class="fa-solid fa-store"></i>App Store</div>
+    <div class="app-icon" onclick="manager.launchApp('Settings')"><i class="fa-solid fa-gear"></i>Settings</div>
+    <div class="app-icon" onclick="manager.launchApp('Files')"><i class="fa-solid fa-folder"></i>Files</div>
+    <div class="app-icon" onclick="manager.launchApp('Calculator')"><i class="fa-solid fa-calculator-simple"></i>Calculator</div>
+    <div class="app-icon" onclick="manager.launchApp('Terminal')"><i class="fa-solid fa-terminal"></i>Terminal</div>
+    <div class="app-icon" onclick="manager.launchApp('Browser')"><i class="fa-solid fa-globe"></i>Browser</div>
+  </div>
+  <div id="taskbar"></div>
+  <script src="manager.js" type="module"></script>
+  <script src="selection.js" type="module"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => document.getElementById('splash').remove(), 2000);
+});
+  </script>
+</body>
+</html>
