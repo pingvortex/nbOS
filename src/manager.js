@@ -1,6 +1,6 @@
-import { dragElement } from './src/functions/dragElement.js';
-import { resizeElement } from './src/functions/resizeElement.js';
-import { showErrorWindow } from './src/functions/showErrorWindow.js';
+import { dragElement } from './functions/dragElement.js';
+import { resizeElement } from './functions/resizeElement.js';
+import { showErrorWindow } from './functions/showErrorWindow.js';
 
 let zIndex = 10;
 
